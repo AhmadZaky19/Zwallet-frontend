@@ -1,3 +1,9 @@
+@import "assets/css/authLayout.css";
+@import "assets/css/navbar.css";
+@import "assets/css/footer.css";
+@import "assets/css/register.css";
+@import "assets/css/login.css";
+
 html,
 body {
   padding: 0;

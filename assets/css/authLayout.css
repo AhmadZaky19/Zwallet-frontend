@@ -1,0 +1,30 @@
+.layout__auth {
+  /* background-color: #6379f4; */
+  color: #fff;
+  padding: 60px 100px;
+}
+
+.layout {
+  padding: 0 !important;
+}
+
+.layout__auth--background {
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+}
+
+/* .layout__auth--image {
+  z-index: 2;
+} */
+
+.layout__auth h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.layout__auth p {
+  font-size: 17px;
+  font-weight: 400;
+}
