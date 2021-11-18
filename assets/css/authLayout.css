@@ -1,11 +1,12 @@
 .layout__auth {
   color: #fff;
-  padding: 60px 140px;
+  padding-top: 60px;
+  padding-left: 160px;
 }
 
 .layout__auth h2 {
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 
 .layout__auth p {
@@ -26,8 +27,9 @@
 }
 
 .layout__auth--image {
-  padding-top: 80px;
-  padding-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  padding-left: 20px;
 }
 
 .layout__auth h2 {

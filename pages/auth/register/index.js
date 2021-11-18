@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 import Layout from "components/Layout";
 import AuthLayout from "components/AuthLayout";
@@ -27,34 +28,50 @@ export default function Register() {
             cover all of that for you!
           </p>
           <form className="form__input">
-            <input
-              img={Person}
-              type="text"
-              name="firstName"
-              placeholder="Enter your firstname"
-              className="form__input--item"
-            />
-            <input
-              img={Person}
-              type="text"
-              name="lastName"
-              placeholder="Enter your lastname"
-              className="form__input--item"
-            />
-            <input
-              img={Mail}
-              type="email"
-              name="email"
-              placeholder="Enter your e-mail"
-              className="form__input--item"
-            />
-            <input
-              img={Lock}
-              type="password"
-              name="password"
-              placeholder="Create your password"
-              className="form__input--item"
-            />
+            <div className="form__input--group">
+              <div className="form__input--icon">
+                <Image src={Person} alt="mail" />
+              </div>
+              <input
+                type="text"
+                name="firstName"
+                placeholder="Enter your first name"
+                className="form__input--item"
+              />
+            </div>
+            <div className="form__input--group">
+              <div className="form__input--icon">
+                <Image src={Person} alt="mail" />
+              </div>
+              <input
+                type="text"
+                name="lastName"
+                placeholder="Enter your last name"
+                className="form__input--item"
+              />
+            </div>
+            <div className="form__input--group">
+              <div className="form__input--icon">
+                <Image src={Mail} alt="mail" />
+              </div>
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter your e-mail"
+                className="form__input--item"
+              />
+            </div>
+            <div className="form__input--group">
+              <div className="form__input--icon">
+                <Image src={Lock} alt="mail" />
+              </div>
+              <input
+                type="password"
+                name="password"
+                placeholder="Enter your password"
+                className="form__input--item"
+              />
+            </div>
             <div className="form__button">
               <button
                 type="submit"

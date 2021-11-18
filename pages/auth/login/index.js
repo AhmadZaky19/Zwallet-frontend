@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 import Layout from "components/Layout";
 import AuthLayout from "components/AuthLayout";
@@ -67,20 +68,31 @@ export default function Login() {
             cover all of that for you!
           </p>
           <form className="form__input">
-            <input
-              img={Mail}
-              type="email"
-              name="email"
-              placeholder="Enter your e-mail"
-              className="form__input--item"
-            />
-            <input
-              img={Lock}
-              type="password"
-              name="password"
-              placeholder="Create your password"
-              className="form__input--item"
-            />
+            <div className="form__input--group">
+              <div className="form__input--icon">
+                <Image src={Mail} alt="mail" />
+              </div>
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter your e-mail"
+                className="form__input--item"
+              />
+            </div>
+            <div className="form__input--group">
+              <div className="form__input--icon">
+                <Image src={Lock} alt="mail" />
+              </div>
+              <input
+                type="password"
+                name="password"
+                placeholder="Enter your password"
+                className="form__input--item"
+              />
+            </div>
+            <div className="resetPassword__page">
+              <Link href="/auth/reset-password">Forgot password?</Link>
+            </div>
             <div className="form__button">
               <button
                 type="submit"
@@ -92,7 +104,7 @@ export default function Login() {
             <div className="login__page">
               <p>
                 Dont have an account? Let’s{" "}
-                <Link href="/auth/login">Login</Link>
+                <Link href="/auth/login">Sign Up</Link>
               </p>
             </div>
           </form>

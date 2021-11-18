@@ -3,6 +3,7 @@
 @import "assets/css/footer.css";
 @import "assets/css/register.css";
 @import "assets/css/login.css";
+@import "assets/css/resetPassword.css";
 
 html,
 body {
@@ -26,7 +27,7 @@ a {
 }
 
 .form__auth__section {
-  padding: 100px 80px 20px 10px !important;
+  padding: 100px 80px 20px 30px !important;
 }
 
 .form__auth__section h2 {
@@ -37,4 +38,5 @@ a {
 .form__auth__section p {
   line-height: 1.9;
   font-size: 17px;
+  color: #3a3d4299;
 }
