@@ -6,6 +6,7 @@
 @import "assets/css/resetPassword.css";
 @import "assets/css/confirmResetPassword.css";
 @import "assets/css/createPin.css";
+@import "assets/css/pinSuccess.css";
 
 html,
 body {
