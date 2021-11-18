@@ -4,11 +4,11 @@ import Image from "next/image";
 import Layout from "components/Layout";
 import AuthLayout from "components/AuthLayout";
 
-import Mail from "assets/icons/mail.svg";
+import Lock from "assets/icons/lock.svg";
 
 export default function ConfirmResetPassword() {
   return (
-    <Layout title="Reset Password">
+    <Layout title="Confirm Reset Password">
       <div className="row">
         <div className="col-md-7 col-sm-0 d-none d-md-inline-block image__auth__section">
           <AuthLayout />
@@ -27,12 +27,23 @@ export default function ConfirmResetPassword() {
           <form className="form__input">
             <div className="form__input--group">
               <div className="form__input--icon">
-                <Image src={Mail} alt="mail" />
+                <Image src={Lock} alt="mail" />
               </div>
               <input
-                type="email"
-                name="email"
-                placeholder="Enter your e-mail"
+                type="password"
+                name="password"
+                placeholder="Create new password"
+                className="form__input--item"
+              />
+            </div>
+            <div className="form__input--group">
+              <div className="form__input--icon">
+                <Image src={Lock} alt="mail" />
+              </div>
+              <input
+                type="password"
+                name="password"
+                placeholder="Confirm new password"
                 className="form__input--item"
               />
             </div>
@@ -41,7 +52,7 @@ export default function ConfirmResetPassword() {
                 type="submit"
                 className="btn btn-primary form__input--button"
               >
-                Confirm
+                Reset Password
               </button>
             </div>
           </form>
