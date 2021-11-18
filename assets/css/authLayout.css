@@ -1,23 +1,34 @@
 .layout__auth {
-  /* background-color: #6379f4; */
   color: #fff;
-  padding: 60px 100px;
+  padding: 60px 140px;
+}
+
+.layout__auth h2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.layout__auth p {
+  line-height: 2;
 }
 
 .layout {
   padding: 0 !important;
+  margin: 0 !important;
 }
 
 .layout__auth--background {
+  height: 100%;
   width: 100%;
   object-fit: cover;
   position: absolute;
   z-index: -1;
 }
 
-/* .layout__auth--image {
-  z-index: 2;
-} */
+.layout__auth--image {
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
 
 .layout__auth h2 {
   font-size: 24px;

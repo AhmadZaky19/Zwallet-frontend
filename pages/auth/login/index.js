@@ -1,69 +1,102 @@
 import React, { useState } from "react";
-import Layout from "components/Layout";
-import axios from "utils/axios";
-import { useRouter } from "next/router";
-import Cookie from "js-cookie";
-import { getDataCookie } from "middleware/authorizationPage";
+import Link from "next/link";
 
-export async function getServerSideProps(context) {
-  const dataCookie = await getDataCookie(context);
-  if (dataCookie.isLogin) {
-    return {
-      redirect: {
-        destination: "/main/home",
-        permanent: false,
-      },
-    };
-  }
-  return { props: {} };
-}
+import Layout from "components/Layout";
+import AuthLayout from "components/AuthLayout";
+
+// import axios from "utils/axios";
+// import { useRouter } from "next/router";
+// import Cookie from "js-cookie";
+// import { getDataCookie } from "middleware/authorizationPage";
+
+import Mail from "assets/icons/mail.svg";
+import Lock from "assets/icons/lock.svg";
+
+// export async function getServerSideProps(context) {
+//   const dataCookie = await getDataCookie(context);
+//   if (dataCookie.isLogin) {
+//     return {
+//       redirect: {
+//         destination: "/main/home",
+//         permanent: false,
+//       },
+//     };
+//   }
+//   return { props: {} };
+// }
 
 export default function Login() {
-  const router = useRouter();
+  // const router = useRouter();
 
-  const [form, setForm] = useState({ email: "", password: "" });
+  // const [form, setForm] = useState({ email: "", password: "" });
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    axios
-      .post("/auth/login", form)
-      .then((res) => {
-        console.log(res);
-        Cookie.set("token", res.data.data.token);
-        Cookie.set("id", res.data.data.id);
-        router.push("/main/home");
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-    console.log(form);
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   axios
+  //     .post("/auth/login", form)
+  //     .then((res) => {
+  //       console.log(res);
+  //       Cookie.set("token", res.data.data.token);
+  //       Cookie.set("id", res.data.data.id);
+  //       router.push("/main/home");
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+  //   console.log(form);
+  // };
 
-  const handleChangeText = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
+  // const handleChangeText = (e) => {
+  //   setForm({ ...form, [e.target.name]: e.target.value });
+  // };
   return (
-    <Layout title="login">
-      <h1>Login Page</h1>
-      <hr />
-      <div className="mt-2">
-        <form className="card p-5" onSubmit={handleSubmit}>
-          <label className="form-label">Email</label>
-          <input
-            type="email"
-            className="form-control"
-            name="email"
-            onChange={handleChangeText}
-          />
-          <label className="form-label">Password</label>
-          <input
-            type="password"
-            className="form-control"
-            name="password"
-            onChange={handleChangeText}
-          />
-          <button className="btn btn-primary mt-3">Submit</button>
-        </form>
+    <Layout title="Login">
+      <div className="row">
+        <div className="col-md-7 col-sm-0 d-none d-md-inline-block image__auth__section">
+          <AuthLayout />
+        </div>
+        <div className="col-md-5 col-sm-12 form__auth__section">
+          <h2>
+            Start Accessing Banking Needs <br />
+            With All Devices and All Platforms <br />
+            With 30.000+ Users
+          </h2>
+          <p>
+            Transfering money is eassier than ever, you can access <br />{" "}
+            Zwallet wherever you are. Desktop, laptop, mobile phone? <br /> we
+            cover all of that for you!
+          </p>
+          <form className="form__input">
+            <input
+              img={Mail}
+              type="email"
+              name="email"
+              placeholder="Enter your e-mail"
+              className="form__input--item"
+            />
+            <input
+              img={Lock}
+              type="password"
+              name="password"
+              placeholder="Create your password"
+              className="form__input--item"
+            />
+            <div className="form__button">
+              <button
+                type="submit"
+                className="btn btn-primary form__input--button"
+              >
+                Login
+              </button>
+            </div>
+            <div className="login__page">
+              <p>
+                Dont have an account? Let’s{" "}
+                <Link href="/auth/login">Login</Link>
+              </p>
+            </div>
+          </form>
+        </div>
       </div>
     </Layout>
   );

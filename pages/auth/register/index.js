@@ -8,50 +8,60 @@ import Person from "assets/icons/person.svg";
 import Mail from "assets/icons/mail.svg";
 import Lock from "assets/icons/lock.svg";
 
-export default function register() {
+export default function Register() {
   return (
     <Layout title="Register">
       <div className="row">
-        <div className="col-lg-7 col-sm-0 d-none d-md-inline-block">
+        <div className="col-md-7 col-sm-0 d-none d-md-inline-block image__auth__section">
           <AuthLayout />
         </div>
-        <div className="col-lg-5 col-sm-12 d-flex justify-content-center layout__login--form">
+        <div className="col-md-5 col-sm-12 form__auth__section">
           <h2>
-            Start Accessing Banking Needs With All Devices and All Platforms
+            Start Accessing Banking Needs <br />
+            With All Devices and All Platforms <br />
             With 30.000+ Users
           </h2>
           <p>
-            Transfering money is eassier than ever, you can access Zwallet
-            wherever you are. Desktop, laptop, mobile phone? we cover all of
-            that for you!
+            Transfering money is eassier than ever, you can access <br />{" "}
+            Zwallet wherever you are. Desktop, laptop, mobile phone? <br /> we
+            cover all of that for you!
           </p>
-          <form>
+          <form className="form__input">
             <input
               img={Person}
               type="text"
               name="firstName"
               placeholder="Enter your firstname"
+              className="form__input--item"
             />
             <input
               img={Person}
               type="text"
               name="lastName"
               placeholder="Enter your lastname"
+              className="form__input--item"
             />
             <input
               img={Mail}
               type="email"
               name="email"
               placeholder="Enter your e-mail"
+              className="form__input--item"
             />
             <input
               img={Lock}
               type="password"
               name="password"
-              placeholder="Enter your password"
+              placeholder="Create your password"
+              className="form__input--item"
             />
             <div className="form__button">
-              <button className="btn btn-primary mt-3">Sign Up</button>
+              <button
+                type="submit"
+                className="btn btn-primary form__input--button"
+              >
+                Sign Up
+              </button>
             </div>
             <div className="register__page">
               <p>

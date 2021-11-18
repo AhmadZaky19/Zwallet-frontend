@@ -20,3 +20,21 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.image__auth__section {
+  padding: 0 !important;
+}
+
+.form__auth__section {
+  padding: 100px 80px 20px 10px !important;
+}
+
+.form__auth__section h2 {
+  line-height: 1.5;
+  padding-bottom: 20px;
+}
+
+.form__auth__section p {
+  line-height: 1.9;
+  font-size: 17px;
+}

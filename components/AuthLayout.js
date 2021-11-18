@@ -5,7 +5,7 @@ import zwallet from "assets/img/zwalletWhite.png";
 import image from "assets/img/authImage.png";
 import background from "assets/img/authBg.png";
 
-export default function LayoutAuth() {
+export default function AuthLayout() {
   return (
     <>
       <div className="layout">
@@ -14,7 +14,7 @@ export default function LayoutAuth() {
         </div>
         <div className="layout__auth">
           <Image src={zwallet} alt="logo" />
-          <div className="layout__auth--image overlay d-flex justify-content-center">
+          <div className="layout__auth--image">
             <Image src={image} alt="imageApp" />
           </div>
 
