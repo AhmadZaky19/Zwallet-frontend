@@ -26,7 +26,7 @@ export default function ConfirmResetPassword() {
             reset password screens.
           </p>
           <form className="form__input">
-            <div className="form__input--item">
+            <div className="form__input--group">
               <div className="form__input--icon">
                 <Image src={Mail} alt="mail" />
               </div>
@@ -34,7 +34,7 @@ export default function ConfirmResetPassword() {
                 type="email"
                 name="email"
                 placeholder="Enter your e-mail"
-                className="form__input--item--email"
+                className="form__input--item"
               />
             </div>
             <div className="form__button">
