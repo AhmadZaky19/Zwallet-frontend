@@ -39,7 +39,7 @@ export default function ConfirmResetPassword() {
             <div className="form__button">
               <button
                 type="submit"
-                className="btn btn-primary form__input--button"
+                className="btn btn-disable form__input--button"
               >
                 Confirm
               </button>

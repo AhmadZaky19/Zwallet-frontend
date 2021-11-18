@@ -96,7 +96,7 @@ export default function Login() {
             <div className="form__button">
               <button
                 type="submit"
-                className="btn btn-primary form__input--button"
+                className="btn btn-disable form__input--button"
               >
                 Login
               </button>
