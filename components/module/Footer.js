@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <>
       <div className="bg">
-        <div className="container ">
+        <div className="container">
           <div className="row">
             <div className="col-md-6 col-12">
               2020 Zwallet. All right reserved.
