@@ -7,6 +7,8 @@
 @import "assets/css/confirmResetPassword.css";
 @import "assets/css/createPin.css";
 @import "assets/css/pinSuccess.css";
+@import "assets/css/sidebar.css";
+@import "assets/css/home.css";
 
 html,
 body {
@@ -46,4 +48,11 @@ a {
   line-height: 1.9;
   font-size: 17px;
   color: #3a3d4299;
+}
+
+.income {
+  transform: rotate(180deg);
+  margin-right: 120px;
+  margin-top: -5px;
+  margin-bottom: 6px;
 }
