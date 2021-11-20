@@ -1,0 +1,26 @@
+.user__history {
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 25px;
+  padding: 30px 30px 12px;
+  margin-left: 20px !important;
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
+}
+
+.user__history--title {
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.form-select {
+  background-color: #3a3d421a !important;
+}
+
+.image__contact {
+  width: 90px !important;
+}
+
+.amount {
+  margin-left: 130px !important;
+}
