@@ -10,6 +10,10 @@
 @import "assets/css/sidebar.css";
 @import "assets/css/home.css";
 @import "assets/css/history.css";
+@import "assets/css/transfer.css";
+@import "assets/css/amount.css";
+@import "assets/css/confirmation.css";
+@import "assets/css/success.css";
 
 html,
 body {

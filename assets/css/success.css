@@ -1,0 +1,22 @@
+.download {
+  display: flex !important;
+  border-color: #6379f426 !important;
+  background: #6379f426 !important;
+  box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05) !important;
+  border-radius: 12px !important;
+  padding: 13px 25px 10px !important;
+  margin-right: 10px;
+  color: #6379f4 !important;
+}
+
+.download__image {
+  padding-right: 10px;
+}
+
+.continue {
+  background-color: #6379f4 !important;
+  border-color: #6379f4 !important;
+  box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05) !important;
+  border-radius: 12px !important;
+  padding: 10px 25px !important;
+}
