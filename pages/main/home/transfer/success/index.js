@@ -22,12 +22,14 @@ export default function TransferResult(props) {
             </div>
             <div className="col-md-9 col-12">
               <div className="transfer__receiver__amount">
-                <div>
+                <div className="transfer__receiver--success">
                   <div className="mb-2">
                     <Image src={Success} alt="success" />
                   </div>
-                  <h5>Transfer Success</h5>
                 </div>
+                <h5 className="d-flex justify-content-center pb-3">
+                  Transfer Success
+                </h5>
                 <div className="row mt-4 receiver__item--detail">
                   <div className="mt-1">
                     <p>Amount</p>
