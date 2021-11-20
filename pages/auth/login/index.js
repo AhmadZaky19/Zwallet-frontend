@@ -51,7 +51,7 @@ export default function Login() {
   //   setForm({ ...form, [e.target.name]: e.target.value });
   // };
   return (
-    <Layout title="Login">
+    <Layout title="Zwallet | Login">
       <div className="row">
         <div className="col-md-7 col-sm-0 d-none d-md-inline-block image__auth__section">
           <AuthLayout />

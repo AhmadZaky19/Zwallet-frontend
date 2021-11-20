@@ -10,7 +10,7 @@ import User from "assets/img/user_icon.png";
 
 export default function History(props) {
   return (
-    <Layout title="History">
+    <Layout title="Dashboard | History">
       <Navbar />
       <div className="bg__main">
         <div className="container">

@@ -67,7 +67,7 @@ export default function Home(props) {
   // console.log(props);
 
   return (
-    <Layout title="Home">
+    <Layout title="Zwallet | Dashboard">
       <Navbar />
       <div className="bg__main">
         <div className="container">

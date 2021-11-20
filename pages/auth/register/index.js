@@ -11,7 +11,7 @@ import Lock from "assets/icons/lock.svg";
 
 export default function Register() {
   return (
-    <Layout title="Register">
+    <Layout title="Zwallet | Register">
       <div className="row">
         <div className="col-md-7 col-sm-0 d-none d-md-inline-block image__auth__section">
           <AuthLayout />

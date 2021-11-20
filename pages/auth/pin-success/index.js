@@ -8,7 +8,7 @@ import Success from "assets/img/success.png";
 
 export default function PinSuccess() {
   return (
-    <Layout title="Create PIN">
+    <Layout title="Zwallet | Create PIN">
       <div className="row">
         <div className="col-md-7 col-sm-0 d-none d-md-inline-block image__auth__section">
           <AuthLayout />

@@ -8,7 +8,7 @@ import Mail from "assets/icons/mail.svg";
 
 export default function ConfirmResetPassword() {
   return (
-    <Layout title="Reset Password">
+    <Layout title="Zwallet | Reset Password">
       <div className="row">
         <div className="col-md-7 col-sm-0 d-none d-md-inline-block image__auth__section">
           <AuthLayout />
