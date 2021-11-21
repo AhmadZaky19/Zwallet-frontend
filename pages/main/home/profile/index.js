@@ -46,7 +46,7 @@ export default function Profile(props) {
                 <p className="d-flex justify-content-center">
                   +62 813-9387-7946
                 </p>
-                <div className="user__profile--menu">
+                <div className="user__profile--menu d-flex justify-content-center">
                   <div
                     className="card user__profile--menu--list"
                     onClick={() => router.push("profile/personal-info")}

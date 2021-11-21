@@ -8,7 +8,11 @@
 }
 
 .sidebar__item {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+.sidebar__item:hover {
+  cursor: pointer;
 }
 
 .sidebar__item h5 {
@@ -17,6 +21,10 @@
 
 .sidebar__item--logout {
   padding-top: 190px;
+}
+
+.sidebar__item--logout:hover {
+  cursor: pointer;
 }
 
 .sidebar__item--logout h5 {

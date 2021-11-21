@@ -6,8 +6,52 @@ module.exports = {
   async rewrites() {
     return [
       {
-        source: "/profile",
-        destination: "/main/profile",
+        source: "/home/dashboard",
+        destination: "/main/home/dashboard",
+      },
+      {
+        source: "/home/dashboard/history",
+        destination: "/main/home/dashboard/history",
+      },
+      {
+        source: "/home/transfer",
+        destination: "/main/home/transfer",
+      },
+      {
+        source: "/home/transfer/amount",
+        destination: "/main/home/transfer/amount",
+      },
+      {
+        source: "/home/transfer/confirmation",
+        destination: "/main/home/transfer/confirmation",
+      },
+      {
+        source: "/home/transfer/success",
+        destination: "/main/home/transfer/success",
+      },
+      {
+        source: "/home/profile",
+        destination: "/main/home/profile",
+      },
+      {
+        source: "/home/profile/change-password",
+        destination: "/main/home/profile/change-password",
+      },
+      {
+        source: "/home/profile/change-pin",
+        destination: "/main/home/profile/change-pin",
+      },
+      {
+        source: "/home/profile/personal-info",
+        destination: "/main/home/profile/personal-info",
+      },
+      {
+        source: "/home/profile/personal-info/add-phone-number",
+        destination: "/main/home/profile/personal-info/add-phone-number",
+      },
+      {
+        source: "/home/profile/personal-info/manage-phone-number",
+        destination: "/main/home/profile/personal-info/manage-phone-number",
       },
     ];
   },

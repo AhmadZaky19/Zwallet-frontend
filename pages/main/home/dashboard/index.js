@@ -127,7 +127,7 @@ export default function Home(props) {
                   <div className="user__transaction">
                     <div className="d-flex user__transaction--title">
                       <h5>Transaction History</h5>
-                      <Link href="#">See all</Link>
+                      <Link href="/home/dashboard/history">See all</Link>
                     </div>
                     <div className="row mt-3">
                       <div className="col-2">
