@@ -107,14 +107,14 @@ export default function Home(props) {
                       <div className="income">
                         <Image src={Income} alt="income" />
                       </div>
-                      <p>Income</p>
+                      <p style={{ color: "#6A6A6A" }}>Income</p>
                       <h4>Rp2.120.000</h4>
                     </div>
                     <div className="col-md-4 offset-md-4">
                       <div className="expense">
                         <Image src={Expense} alt="expense" />
                       </div>
-                      <p>Expense</p>
+                      <p style={{ color: "#6A6A6A" }}>Expense</p>
                       <h4>Rp1.560.000</h4>
                     </div>
                     <div className="col-12">

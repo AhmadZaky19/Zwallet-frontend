@@ -14,6 +14,12 @@
 @import "assets/css/amount.css";
 @import "assets/css/confirmation.css";
 @import "assets/css/success.css";
+@import "assets/css/profile.css";
+@import "assets/css/personalInfo.css";
+@import "assets/css/changePassword.css";
+@import "assets/css/changePin.css";
+@import "assets/css/addPhoneNumber.css";
+@import "assets/css/managePhoneNumber.css";
 
 html,
 body {
@@ -53,11 +59,4 @@ a {
   line-height: 1.9;
   font-size: 17px;
   color: #3a3d4299;
-}
-
-.income {
-  transform: rotate(180deg);
-  margin-right: 120px;
-  margin-top: -5px;
-  margin-bottom: 6px;
 }
