@@ -6,6 +6,30 @@ module.exports = {
   async rewrites() {
     return [
       {
+        source: "/login",
+        destination: "/auth/login",
+      },
+      {
+        source: "/register",
+        destination: "/auth/register",
+      },
+      {
+        source: "/create-pin",
+        destination: "/auth/create-pin",
+      },
+      {
+        source: "/pin-success",
+        destination: "/auth/pin-success",
+      },
+      {
+        source: "/reset-password",
+        destination: "/auth/reset-password",
+      },
+      {
+        source: "/confirm-reset-password",
+        destination: "/auth/confirm-reset-password",
+      },
+      {
         source: "/home/dashboard",
         destination: "/main/home/dashboard",
       },

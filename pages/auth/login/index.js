@@ -91,7 +91,7 @@ export default function Login() {
               />
             </div>
             <div className="resetPassword__page">
-              <Link href="/auth/reset-password">Forgot password?</Link>
+              <Link href="/reset-password">Forgot password?</Link>
             </div>
             <div className="form__button">
               <button
@@ -104,7 +104,7 @@ export default function Login() {
             <div className="login__page">
               <p>
                 Dont have an account? Let’s{" "}
-                <Link href="/auth/login">Sign Up</Link>
+                <Link href="/register">Sign Up</Link>
               </p>
             </div>
           </form>
