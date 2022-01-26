@@ -46,15 +46,15 @@ Tech that use in this project:
 ## Screenshoots
 
 - Login page
-  ![image](https://user-images.githubusercontent.com/64245462/148922166-e74e100f-c915-49f3-8b31-05d2476e9251.png)
+  ![image](https://user-images.githubusercontent.com/64245462/151105239-6acb8497-c20e-4024-97d8-3df282147731.png)
 - Home page
-  ![image](https://user-images.githubusercontent.com/64245462/148930525-2ac6ab24-a7c7-4529-b772-14a4d7a18854.png)
-- Movie Detail page
-  ![image](https://user-images.githubusercontent.com/64245462/148930743-104855b6-d0a2-4704-8c8f-8aa49ae479b9.png)
-- Order page
-  ![image](https://user-images.githubusercontent.com/64245462/148930886-65957dcc-604b-4534-930a-69501db6360a.png)
-- Manage movie page (admin)
-  ![image](https://user-images.githubusercontent.com/64245462/148931077-8f5002c7-cc44-49df-a7cb-f995885b5567.png)
+  ![image](https://user-images.githubusercontent.com/64245462/151105323-5947025e-f4fa-4838-9c17-d281fe991fcd.png)
+- Transfer page
+  ![image](https://user-images.githubusercontent.com/64245462/151105452-1d015dae-8dd4-4c52-bfe5-e2bd7751c686.png)
+- Transfer Success page
+  ![image](https://user-images.githubusercontent.com/64245462/151105557-e800bc74-d976-4d50-989c-6ea3dbc01f5e.png)
+- Profile page
+  ![image](https://user-images.githubusercontent.com/64245462/151105611-0eb4529d-47c7-43e2-a528-70fd1a3774f6.png)
 
 ## Demo Project
 
