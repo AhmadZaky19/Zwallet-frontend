@@ -27,7 +27,7 @@ export default function Profile(props) {
                 <div className="d-flex justify-content-center">
                   <div className="user__profile--image">
                     <Image
-                      src={User}
+                      src={Zaky}
                       alt="user"
                       className="user__profile--image--border"
                     />
