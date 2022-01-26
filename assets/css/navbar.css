@@ -6,9 +6,10 @@
 }
 
 .user__image--nav {
-  height: 50px;
-  width: 50px;
-  margin-right: 20px !important;
+  height: 80% !important;
+  width: 80% !important;
+  margin-right: 1px !important;
+  display: flex;
 }
 
 .user__image--nav--border {

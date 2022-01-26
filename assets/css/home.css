@@ -68,3 +68,23 @@
   text-decoration: none;
   color: #6379f4;
 }
+
+.expense {
+  color: #ff5b37;
+}
+
+.income {
+  color: #1ec15f;
+}
+
+.transfer__history--image {
+  /* margin-top: 7px !important; */
+  height: 58px !important;
+  width: 80px !important;
+  display: flex;
+}
+
+.transfer__history--image--border {
+  background-blend-mode: normal;
+  border-radius: 10px !important;
+}

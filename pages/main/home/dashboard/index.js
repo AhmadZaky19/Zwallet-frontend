@@ -13,6 +13,8 @@ import Plus from "assets/icons/plus.svg";
 import Income from "assets/icons/arrow-income.svg";
 import Expense from "assets/icons/arrow-expense.svg";
 import User from "assets/img/user_icon.png";
+import Dummy1 from "assets/img/dummy.jpg";
+import Dummy2 from "assets/img/Ahmad Zaky.jpg";
 
 // Server Side Rendering
 // export async function getServerSideProps(context) {
@@ -130,51 +132,67 @@ export default function Home(props) {
                       <Link href="/home/dashboard/history">See all</Link>
                     </div>
                     <div className="row mt-3">
-                      <div className="col-2">
-                        <Image src={User} alt="user" />
+                      <div className="col-3 transfer__history--image">
+                        <Image
+                          src={User}
+                          alt="user"
+                          className="transfer__history--image--border"
+                        />
                       </div>
                       <div className="col-5">
                         <h6>Samuel Suhi</h6>
-                        <p>Accept</p>
+                        <p>transfer</p>
                       </div>
-                      <div className="col-4 offset-1 mt-3 d-flex justify-content-end">
-                        <h6>+Rp50.000</h6>
+                      <div className="col-4 mt-3 d-flex justify-content-end">
+                        <h6 className="expense">-Rp50.000</h6>
                       </div>
                     </div>
                     <div className="row mt-3">
-                      <div className="col-2">
-                        <Image src={User} alt="user" />
+                      <div className="col-3 transfer__history--image">
+                        <Image
+                          src={Dummy1}
+                          alt="user"
+                          className="transfer__history--image--border"
+                        />
                       </div>
                       <div className="col-5">
-                        <h6>Samuel Suhi</h6>
-                        <p>Accept</p>
+                        <h6>John Silver</h6>
+                        <p>transfer</p>
                       </div>
-                      <div className="col-4 offset-1 mt-3 d-flex justify-content-end">
-                        <h6>+Rp50.000</h6>
+                      <div className="col-4 mt-3 d-flex justify-content-end">
+                        <h6 className="expense">-Rp50.000</h6>
                       </div>
                     </div>
                     <div className="row mt-3">
-                      <div className="col-2">
-                        <Image src={User} alt="user" />
+                      <div className="col-3 transfer__history--image">
+                        <Image
+                          src={Dummy2}
+                          alt="user"
+                          className="transfer__history--image--border"
+                        />
                       </div>
                       <div className="col-5">
-                        <h6>Samuel Suhi</h6>
-                        <p>Accept</p>
+                        <h6>Ahmad Zaky</h6>
+                        <p>Top Up</p>
                       </div>
-                      <div className="col-4 offset-1 mt-3 d-flex justify-content-end">
-                        <h6>+Rp50.000</h6>
+                      <div className="col-4 mt-3 d-flex justify-content-end">
+                        <h6 className="income">+Rp50.000</h6>
                       </div>
                     </div>
                     <div className="row mt-3">
-                      <div className="col-2">
-                        <Image src={User} alt="user" />
+                      <div className="col-3 transfer__history--image">
+                        <Image
+                          src={Dummy2}
+                          alt="user"
+                          className="transfer__history--image--border"
+                        />
                       </div>
                       <div className="col-5">
-                        <h6>Samuel Suhi</h6>
-                        <p>Accept</p>
+                        <h6>Ahmad Zaky</h6>
+                        <p>Top Up</p>
                       </div>
-                      <div className="col-4 offset-1 mt-3 d-flex justify-content-end">
-                        <h6>+Rp50.000</h6>
+                      <div className="col-4 mt-3 d-flex justify-content-end">
+                        <h6 className="income">+Rp50.000</h6>
                       </div>
                     </div>
                   </div>

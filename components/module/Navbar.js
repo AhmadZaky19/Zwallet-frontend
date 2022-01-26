@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 
 import Logo from "assets/img/zwalletPurple.png";
 import User from "assets/img/user_icon.png";
+import UserDummy from "assets/img/Ahmad Zaky.jpg";
 import Bell from "assets/icons/bell.svg";
 
 export default function Navbar() {
@@ -29,7 +30,7 @@ export default function Navbar() {
                 <div className="col-md-3 mt-1">
                   <div className="user__image--nav">
                     <Image
-                      src={User}
+                      src={UserDummy}
                       alt="user"
                       className="user__image--nav--border"
                     />
