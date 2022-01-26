@@ -5,51 +5,51 @@ import Image from "next/image";
 import Layout from "components/Layout";
 import AuthLayout from "components/AuthLayout";
 
-// import axios from "utils/axios";
-// import { useRouter } from "next/router";
-// import Cookie from "js-cookie";
-// import { getDataCookie } from "middleware/authorizationPage";
+import axios from "utils/axios";
+import { useRouter } from "next/router";
+import Cookie from "js-cookie";
+import { getDataCookie } from "middleware/authorizationPage";
 
 import Mail from "assets/icons/mail.svg";
 import Lock from "assets/icons/lock.svg";
 
-// export async function getServerSideProps(context) {
-//   const dataCookie = await getDataCookie(context);
-//   if (dataCookie.isLogin) {
-//     return {
-//       redirect: {
-//         destination: "/main/home",
-//         permanent: false,
-//       },
-//     };
-//   }
-//   return { props: {} };
-// }
+export async function getServerSideProps(context) {
+  const dataCookie = await getDataCookie(context);
+  if (dataCookie.isLogin) {
+    return {
+      redirect: {
+        destination: "/main/home",
+        permanent: false,
+      },
+    };
+  }
+  return { props: {} };
+}
 
 export default function Login() {
-  // const router = useRouter();
+  const router = useRouter();
 
-  // const [form, setForm] = useState({ email: "", password: "" });
+  const [form, setForm] = useState({ email: "", password: "" });
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   axios
-  //     .post("/auth/login", form)
-  //     .then((res) => {
-  //       console.log(res);
-  //       Cookie.set("token", res.data.data.token);
-  //       Cookie.set("id", res.data.data.id);
-  //       router.push("/main/home");
-  //     })
-  //     .catch((err) => {
-  //       console.log(err);
-  //     });
-  //   console.log(form);
-  // };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    axios
+      .post("/auth/login", form)
+      .then((res) => {
+        console.log(res);
+        Cookie.set("token", res.data.data.token);
+        Cookie.set("id", res.data.data.id);
+        router.push("/main/home/dashboard");
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+    console.log(form);
+  };
 
-  // const handleChangeText = (e) => {
-  //   setForm({ ...form, [e.target.name]: e.target.value });
-  // };
+  const handleChangeText = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
   return (
     <Layout title="Zwallet | Login">
       <div className="row">
@@ -77,6 +77,7 @@ export default function Login() {
                 name="email"
                 placeholder="Enter your e-mail"
                 className="form__input--item"
+                onChange={handleChangeText}
               />
             </div>
             <div className="form__input--group">
@@ -88,6 +89,7 @@ export default function Login() {
                 name="password"
                 placeholder="Enter your password"
                 className="form__input--item"
+                onChange={handleChangeText}
               />
             </div>
             <div className="resetPassword__page">
@@ -97,6 +99,7 @@ export default function Login() {
               <button
                 type="submit"
                 className="btn btn-disable form__input--button"
+                onClick={handleSubmit}
               >
                 Login
               </button>
